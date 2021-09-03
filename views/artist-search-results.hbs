@@ -1,0 +1,13 @@
+<div>
+   {{#each allArtists}}
+   <li class="column">
+      <a href="/artist-search-results"> </a>
+      {{ name }}
+      <img class="images" src="{{images.0.url}}">
+      <form method="GET" action="/albums/{{id}}">
+      <button type="submit"> - View Albums</button>
+      </form>
+      {{/each}}
+   </li>
+</ul>
+</div>

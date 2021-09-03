@@ -1,0 +1,12 @@
+{{#each allAlbums}}
+	<ul>
+
+		<li class="album">
+			{{name}}
+			<img class="images" src="{{images.0.url}}" />
+			<form method="GET" action="/view-tracks/{{id}}">
+				<button type="submit"> - View Tracks</button>
+			</form>
+		</li>
+	</ul>
+{{/each}}
